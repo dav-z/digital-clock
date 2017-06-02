@@ -53,22 +53,21 @@ document.addEventListener("DOMContentLoaded", function() {
     if( hours >= 24 ) {
       hours = 0;
     }
-    console.log("hours", hours)
     if( hours < 7 && hours > 0 ) {
       document.getElementById('greeting').innerText = "Get Some Sleep While You Can, Ugly.";
-      document.body.style.backgroundColor = "MidnightBlue";
+      document.body.style.backgroundImage = "url('night.jpg')";
     }
     else if( hours == 7 ) {
       document.getElementById('greeting').innerText = "Surf's Up, Bruh.";
-      document.body.style.backgroundColor = "Aqua";
+      document.body.style.backgroundImage = "url('surf.jpg')";
     }
     else if( hours < 19 && hours > 7 ) {
       document.getElementById('greeting').innerText = "The Sun's Out, I Guess.";
-        document.body.style.backgroundColor = "DeepSkyBlue";
+        document.body.style.backgroundImage = "url('day.jpg')";
     }
     else {
       document.getElementById('greeting').innerText = "Get Some Sleep While You Can, Ugly.";
-      document.body.style.backgroundColor = "MidnightBlue";
+      document.body.style.backgroundImage = "url('night.jpg')";
     }
     elSecond.innerText = seconds;
     elMinute.innerText = minutes;
